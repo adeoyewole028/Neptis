@@ -23,10 +23,10 @@
     <section>
       <div class="relative isolate px-6 lg:px-8">
         <div class="hidden lg:block mx-auto max-w-4xl py-10 sm:py-48 lg:py-10">
-          <img src="~/assets/images/frame.png" alt="Product screenshot" />
+          <img src="/images/frame.png" alt="Product screenshot" />
         </div>
         <div class="lg:hidden mx-auto max-w-4xl py-10 sm:py-48 lg:py-10">
-          <img src="~/assets/images/mobile-frame.png" alt="Product screenshot" />
+          <img src="/images/mobile-frame.png" alt="Product screenshot" />
         </div>
       </div>
     </section>
