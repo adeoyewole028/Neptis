@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  target: "static",
-  ssr: false,
+  // target: "static",
+  ssr: true,
 
   app: {
     head: {
@@ -16,7 +16,7 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "icon", type: "image/x-icon", href: "/logo.png" },
         {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap",
@@ -32,4 +32,8 @@ export default defineNuxtConfig({
   css: ["~/assets/css/global.css"],
   modules: ["@nuxthq/ui"],
   devtools: { enabled: true },
+
+  generate: {
+    fallback: true,
+  },
 });

@@ -24,6 +24,16 @@
                 <dt class="block font-semibold text-white text-xl">
                   <div class="absolute left-1 top-1 h-5 w-5">
                     <img src="~/assets/images/circle.png" alt="" />
+                    <div
+                      class="border-[#A522C3] border-2 h-[245px] lg:h-72 xl:h-64 w-1 lg:-top-[280px] xl:-top-[250px] -top-[245px] left-1.5 absolute"
+                      :class="[
+                        feature.name === 'User-Friendly Interface'
+                          ? 'border-none h-0'
+                          : feature.name === 'AI-Powered Website Generation'
+                          ? 'ai'
+                          : '',
+                      ]"
+                    ></div>
                   </div>
                   {{ feature.name }}
                 </dt>
@@ -73,3 +83,100 @@ const features = [
   },
 ];
 </script>
+
+<style scoped>
+.border-2 {
+  padding-top: 1rem;
+  top: 5px;
+  height: 150px;
+}
+.ai {
+  height: 230px;
+}
+/* media min 360px  max 414px */
+@media (min-width: 360px) and (max-width: 412px) {
+  .border-2 {
+    padding-top: 1rem;
+    top: 5px;
+    height: 196px;
+  }
+  .ai {
+    height: 230px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 360px) {
+  .border-2 {
+    padding-top: 1rem;
+    top: 5px;
+    height: 260px;
+  }
+
+  .ai {
+    height: 256px;
+  }
+}
+@media (min-width: 390px) and (max-width: 393px) {
+  .border-2 {
+    padding-top: 1rem;
+    top: 5px;
+    height: 180px;
+  }
+
+  .ai {
+    height: 230px;
+  }
+}
+
+@media (min-width: 412px) and (max-width: 540px) {
+  .border-2 {
+    padding-top: 1rem;
+    top: 5px;
+    height: 155px;
+  }
+
+  .ai {
+    height: 230px;
+  }
+}
+@media (min-width: 538px) and (max-width: 645px) {
+  .border-2 {
+    padding-top: 1rem;
+    top: 5px;
+    height: 125px;
+  }
+
+  .ai {
+    height: 230px;
+  }
+}
+
+@media (min-width: 640px) {
+  .border-2 {
+    padding-top: 1rem;
+    top: 5px;
+    height: 120px;
+  }
+  .ai {
+    height: 230px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1138px) {
+  .border-2 {
+    padding-top: 1rem;
+    top: 5px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .border-2 {
+    padding-top: 1rem;
+    top: 5px;
+    height: 120px;
+  }
+  .ai {
+    height: 230px;
+  }
+}
+</style>
